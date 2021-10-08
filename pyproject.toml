@@ -1,0 +1,18 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "django_template_breakpoint"
+authors = [{name = "Peter Inglesby", email = "peter.inglesby@gmail.com"}]
+classifiers = ["License :: OSI Approved :: MIT License"]
+readme = "README.md"
+dynamic = ["version", "description"]
+requires-python = ">=3.7"
+dependencies = ["django"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Source = "https://github.com/inglesp/django-template-breakpoint"
