@@ -11,11 +11,8 @@ def breakpoint(context):  # noqa: A001
     """Invoke the breakpoint hook.
 
     Since this function's parameter must be called `context`, we call another function
-    to do the work
-
-    This calls a separate function because this function is decorated with
-    `takes_context = True`, which means that its first parameter must be called
-    `context`.  However...
+    to do the work.  This prevents any template variable that is also called `context`
+    from being ignored.
     """
 
     _breakpoint(context)
